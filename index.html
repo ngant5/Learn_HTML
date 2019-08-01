@@ -1,77 +1,90 @@
-<style>
-    .header {
-        background-color: darkgrey;
-        padding-left: 15px;
-        padding-bottom: 5px;
-        padding-top: 1px;
-    }
-    .frame_1 {
-        background-color: green;
-        margin-left: 200px;
-        padding-left: 15px;
-        padding-bottom: 5px;
-        padding-top: 1px;
-    }
-    .frame_2 {
-        background-color: greenyellow;
-        margin-left: 200px;
-        padding-left: 15px;
-        padding-bottom: 5px;
-        padding-top: 1px;
-    }
-    .frame_3 {
-        background-color: darkseagreen;
-        margin-left: 200px;
-        padding-left: 15px;
-        padding-bottom: 5px;
-        padding-top: 1px;
-    }
-    .frame_4 {
-        background-color: mediumseagreen;
-        margin-left: 200px;
-        padding-left: 15px;
-        padding-bottom: 5px;
-        padding-top: 1px;
-    }
-    .frame_5 {
-        background-color: darkgreen;
-        margin-left: 200px;
-        padding-left: 15px;
-        padding-bottom: 5px;
-        padding-top: 1px;
-    }
-    body {
-        background: #5d9ab2;
-    }
-</style>
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        .body{
+            font-family: "MS Gothic";
+            background-color: white;
+        }
+        .main {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: 25px;
+        }
+        .left{
+            background-color: #E8E8E8;
+            -ms-flex: 25%;
+            flex: 25%;
+            padding: 15px;
+
+
+        }
+        .right {
+            background-color: #F1F1F1;
+            -ms-flex: 65%;
+            flex: 65%;
+            padding: 15px;
+        }
+        .image, .aboutMe, .proSkills, .perSkills, .followMe, .name, .exp, .edu, .ref{
+
+            padding-left: 15px;
+            wight: 100px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+
 
 <body>
 
 <div class="main">
-    <div class="header">
-        <p>HEADER</p>
-    </div>
-    <div class="frame_1">
-        <p>Text 1</p>
-        <p>Sample</p>
-    </div>
-    <div  class="frame_2">
-        <p>Text 2</p>
-        <p>Sample</p>
-    </div>
-    <div class="frame_3">
-        <p>Text 3</p>
-        <p>Sample</p>
-    </div>
-    <div class="frame_4">
-        <p>Text 4</p>
-        <p>Sample</p>
-    </div>
-    <div class="frame_5">
-        <p>Text 5</p>
-        <p>Sample</p>
+    <div class="left">
+        <div class="image">
+            <p>IMAGE</p>
+            <hr>
+        </div>
+        <div class="aboutMe">
+            <p>ABOUT ME</p>
+            <hr>
+
+        </div>
+        <div class="proSkills">
+            <p>PROFESSIONAL SKILLS</p>
+            <hr>
+
+        </div>
+        <div class="perSkills">
+            <p>PERSONAL SKILLS</p>
+            <hr>
+        </div>
+        <div class="followMe">
+            <p>FOLLOW ME</p>
+            <hr>
+        </div>
     </div>
 
+    <div class="right">
+        <div class="name">
+            <p>NGA NGUYEN</p>
+            <hr>
+        </div>
+        <div class="exp">
+            <p>EXPERIENCE</p>
+            <hr>
+        </div>
+        <div class="edu">
+            <p>EDUCATION</p>
+            <hr>
+        </div>
+        <div class="ref">
+            <p>REFERENCE</p>
+            <hr>
+        </div>
+    </div>
 </div>
 
 </body>
+</html>
