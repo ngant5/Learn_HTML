@@ -6,6 +6,7 @@
             font-family: "Times New Roman";
             font-size: 12pt;
             background-color: white;
+
         }
         .main {
             display: -ms-flexbox;
@@ -13,6 +14,7 @@
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             margin: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
         }
         .left{
             background-color: #E8E8E8;
@@ -31,12 +33,15 @@
         .image, .aboutMe, .proSkills, .perSkills, .followMe, .name, .exp, .edu, .ref{
             padding-left: 15px;
             padding-bottom: 5px;
-            padding-top: 1px;
+            padding-top: 10px;
             wight: 100px;
             height: 200px;
         }
         .exp{
-            height: 500px;
+            height: 415px;
+        }
+        .edu{
+            height: 350px;
         }
 
         img{
@@ -45,22 +50,22 @@
         .name{
             line-height: 50%;
         }
-        .exp{
+        .exp, .edu{
             position: relative;
         }
-        .exp_left{
+        .exp_left, .edu_left{
             position: absolute;
             left: auto;
             width: 100px;
             height: 120px;
         }
-        .exp_right{
+        .exp_right, .edu_right{
             position: absolute;
             left: 200px;
             width: auto;
             height: 120px;
         }
-        .exp_second{
+        .exp_second, .edu_second{
             padding-top: 150px;
         }
 
@@ -112,8 +117,8 @@
                     <p><em>2013 - 2016</em></p>
                 </div>
                 <div class="exp_right">
-                    <h4>ZIGEXN</h4>
-                    <p>Translating documents from Japanese to Vietnamese</p>
+                    <h5>ZIGEXN</h5>
+                    <p>Translating documents Japanese &#8644 Vietnamese</p>
                     <p>Interpreting in the meeting, support team in sales</p>
                 </div>
             </div>
@@ -123,8 +128,8 @@
                     <p><em>2016 - 2018</em></p>
                 </div>
                 <div class="exp_right">
-                    <h4>BISYNC</h4>
-                    <p>Translating documents from Japanese to Vietnamese</p>
+                    <h5>BISYNC</h5>
+                    <p>Translating documents Japanese &#8644 Vietnamese</p>
                     <p>Execute tests and report bugs</p>
                     <p>Interpreting in the meeting, support Managers</p>
                 </div>
@@ -136,6 +141,28 @@
         <div class="edu">
             <h3>EDUCATION</h3>
             <hr>
+            <div class="edu_first">
+                <div class="edu_left">
+                    <h4>HUFLIT</h4>
+                    <p>2008 - 2012</p>
+                </div>
+                <div class="edu_right">
+                    <h5>JAPANOLOGY</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="edu_second">
+                <div class="edu_left">
+                    <h4>APTECH</h4>
+                    <p>2019 - 2021</p>
+                </div>
+                <div class="edu_right">
+                    <h5>ADSE</h5>
+                    <p>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="ref">
             <h3>REFERENCE</h3>
