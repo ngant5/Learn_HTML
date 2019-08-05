@@ -16,25 +16,27 @@
         }
         .left{
             background-color: #E8E8E8;
-            -ms-flex: 25%;
-            flex: 25%;
+            -ms-flex: 30%;
+            flex: 30%;
             padding: 15px;
         }
-        .right {
+
+        .right{
             background-color: #F1F1F1;
-            -ms-flex: 65%;
-            flex: 65%;
+            -ms-flex: 60%;
+            flex: 60%;
             padding: 15px;
         }
-        .aboutMe, .proSkills, .perSkills, .followMe, .name, .exp, .edu, .ref{
+
+        .image, .aboutMe, .proSkills, .perSkills, .followMe, .name, .exp, .edu, .ref{
             padding-left: 15px;
             padding-bottom: 5px;
             padding-top: 1px;
-        }
-        .image, .aboutMe, .proSkills, .perSkills, .followMe, .name, .exp, .edu, .ref{
-            padding-left: 15px;
             wight: 100px;
             height: 200px;
+        }
+        .exp{
+            height: 500px;
         }
 
         img{
@@ -43,8 +45,24 @@
         .name{
             line-height: 50%;
         }
-
-
+        .exp{
+            position: relative;
+        }
+        .exp_left{
+            position: absolute;
+            left: auto;
+            width: 100px;
+            height: 120px;
+        }
+        .exp_right{
+            position: absolute;
+            left: 200px;
+            width: auto;
+            height: 120px;
+        }
+        .exp_second{
+            padding-top: 150px;
+        }
 
     </style>
 
@@ -58,21 +76,21 @@
             <img src="Image.JPG" alt="nga_nguyen" style="width:200px">
         </div>
         <div class="aboutMe">
-            <p>ABOUT ME</p>
+            <h3>ABOUT ME</h3>
             <hr>
 
         </div>
         <div class="proSkills">
-            <p>PROFESSIONAL SKILLS</p>
+            <h3>PROFESSIONAL SKILLS</h3>
             <hr>
 
         </div>
         <div class="perSkills">
-            <p>PERSONAL SKILLS</p>
+            <h3>PERSONAL SKILLS</h3>
             <hr>
         </div>
         <div class="followMe">
-            <p>FOLLOW ME</p>
+            <h3>FOLLOW ME</h3>
             <hr>
         </div>
     </div>
@@ -84,18 +102,43 @@
             <p>24 Phan Liem Street, Dakao Ward, District 1, HoChiMinh City, Vietnam</p>
             <p>Phone number: 091.2345.678</p>
             <p>Email: nguyentuyetnga0209@gmail.com</p>
-            <hr>
         </div>
         <div class="exp">
-            <p>EXPERIENCE</p>
+            <h3>EXPERIENCE</h3>
             <hr>
+            <div class="exp_first">
+                <div class="exp_left">
+                    <h4>IT COMTOR</h4>
+                    <p><em>2013 - 2016</em></p>
+                </div>
+                <div class="exp_right">
+                    <h4>ZIGEXN</h4>
+                    <p>Translating documents from Japanese to Vietnamese</p>
+                    <p>Interpreting in the meeting, support team in sales</p>
+                </div>
+            </div>
+            <div class="exp_second">
+                <div class="exp_left">
+                    <h4>IT COMTOR</h4>
+                    <p><em>2016 - 2018</em></p>
+                </div>
+                <div class="exp_right">
+                    <h4>BISYNC</h4>
+                    <p>Translating documents from Japanese to Vietnamese</p>
+                    <p>Execute tests and report bugs</p>
+                    <p>Interpreting in the meeting, support Managers</p>
+                </div>
+
+            </div>
+
+
         </div>
         <div class="edu">
-            <p>EDUCATION</p>
+            <h3>EDUCATION</h3>
             <hr>
         </div>
         <div class="ref">
-            <p>REFERENCE</p>
+            <h3>REFERENCE</h3>
             <hr>
         </div>
     </div>
