@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body{
+        body {
             font-family: "Times New Roman";
             font-size: 12pt;
             background-color: white;
@@ -15,7 +16,7 @@
             margin: 25px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
         }
-        .left{
+        .left {
             background-color: #E8E8E8;
             -ms-flex: 30%;
             flex: 30%;
@@ -23,54 +24,83 @@
 
         }
 
-        .right{
+        .right {
             background-color: #F1F1F1;
             -ms-flex: 60%;
             flex: 60%;
             padding: 15px;
         }
 
-        .image, .aboutMe, .proSkills, .perSkills, .followMe, .name, .exp, .edu, .ref{
+        .image, .aboutMe, .proSkills, .perSkills, .followMe, .name, .exp, .edu, .ref {
             padding-left: 15px;
             padding-bottom: 5px;
             padding-top: 10px;
             width: auto;
         }
-        .exp{
+        .exp {
             height: 350px;
         }
-        .edu{
+        .edu {
             height: 300px;
         }
 
-        img{
+        img {
             text-align: center;
         }
-        .name{
+        .name {
             line-height: 50%;
         }
-        .exp, .edu{
+        .exp, .edu {
             position: relative;
             line-height: auto;
         }
-        .exp_left, .edu_left{
+        .exp_left, .edu_left {
             position: absolute;
             left: auto;
             width: 100px;
             height: 120px;
         }
-        .exp_right, .edu_right{
+        .exp_right, .edu_right {
             position: absolute;
             left: 200px;
             width: auto;
             height: 120px;
         }
-        .exp_second, .edu_second{
+        .exp_second, .edu_second {
             padding-top: 150px;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            magin: 5px 2px;
+        }
+        .fa hover {
+            opacity: 0.7;
+        }
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        .fa-twitter {
+            background: #007bb5;
+            color: white;
+        }
+        .fa-skype {
+            background: #00aff0;
+            color: white;
+        }
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
         }
 
     </style>
-
 </head>
 
 <body>
@@ -98,6 +128,11 @@
         <div class="followMe">
             <h3>FOLLOW ME</h3>
             <hr>
+            <a href="https://www.skype.com" class="fa fa-skype" target="_blank"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://twitter.com" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
         </div>
     </div>
 
