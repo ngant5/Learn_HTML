@@ -6,7 +6,7 @@
         body {
             font-family: "Times New Roman";
             font-size: 12pt;
-            background-color: white;
+
         }
         .main {
             display: -ms-flexbox;
@@ -14,14 +14,15 @@
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             margin: 25px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+            line-height: normal;
+
         }
         .left {
             background-color: #E8E8E8;
             -ms-flex: 30%;
             flex: 30%;
             padding: 15px;
-
         }
 
         .right {
@@ -32,43 +33,51 @@
         }
 
         .image, .aboutMe, .proSkills, .perSkills, .followMe, .name, .exp, .edu, .ref {
+            line-height: normal;
+            position: static;
             padding-left: 15px;
             padding-bottom: 5px;
-            padding-top: 10px;
+            padding-top: 5px;
             width: auto;
+            text-shadow: 0 0 3px #E8E8E8;
         }
         .exp {
-            height: 350px;
+            height: 300px;
         }
         .edu {
-            height: 300px;
+            height: 220px;
         }
 
         img {
             text-align: center;
         }
-        .name {
-            line-height: 50%;
-        }
         .exp, .edu {
             position: relative;
-            line-height: auto;
+            line-height: 80%;
         }
         .exp_left, .edu_left {
             position: absolute;
             left: auto;
-            width: 100px;
-            height: 120px;
         }
         .exp_right, .edu_right {
             position: absolute;
             left: 200px;
+        }
+
+        .edu_first, .edu_second {
             width: auto;
-            height: 120px;
+            height: 60px;
+            padding-bottom: 10px;
+            padding-top: 10px;
         }
-        .exp_second, .edu_second {
-            padding-top: 150px;
+
+        .exp_first, .exp_second {
+            width: auto;
+            height: 100px;
+            padding-bottom: 10px;
+            padding-top: 10px;
         }
+
         .fa {
             padding: 20px;
             font-size: 20px;
@@ -79,26 +88,36 @@
         .fa hover {
             opacity: 0.7;
         }
-        .fa-facebook {
-            background: #3B5998;
-            color: white;
-        }
-        .fa-twitter {
-            background: #007bb5;
-            color: white;
-        }
-        .fa-skype {
-            background: #00aff0;
-            color: white;
-        }
-        .fa-youtube {
-            background: #bb0000;
-            color: white;
-        }
         .fa-linkedin {
             background: #007bb5;
             color: white;
         }
+        .fa-github {
+            background: white;
+            color: black;
+        }
+        .container {
+            background-color: white;
+            width: 100%;
+            border-radius: 15px;
+        }
+        .skills {
+            text-align: right;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        }
+
+
+        .photo {width: 70%; background-color: #BDB76B;}
+        .word_press {width: 60%; background-color: #BDB76B;}
+        .html {width: 50%; background-color: #BDB76B;}
+        .teamwork {width: 80%; background-color: #BDB76B;}
+        .communication {width: 70%; background-color: #BDB76B;}
+        .leadership {width: 60%; background-color: #BDB76B;}
+
 
     </style>
 </head>
@@ -121,99 +140,98 @@
         <div class="proSkills">
             <h3>PROFESSIONAL SKILLS</h3>
             <hr>
-            <div class="proSkills_left">
+            <div>
                 <p><b>PHOTOSHOP</b></p>
             </div>
-            <div class="proSkills_right">
-
+            <div class="container">
+                <div class="skills photo"></div>
             </div>
-            <div class="proSkills_left">
+            <div>
                 <p><b>WORDPRESS</b></p>
             </div>
-            <div class="proSkills_right">
-
+            <div class="container">
+                <div class="skills word_press"></div>
             </div>
-            <div class="proSkills_left">
+            <div>
                 <p><b>HTML</b></p>
             </div>
-            <div class="proSkills_right">
-
+            <div class="container">
+                <div class="skills html"></div>
             </div>
 
         </div>
         <div class="perSkills">
             <h3>PERSONAL SKILLS</h3>
-            <hr>
-            <div class="perSkills_left">
-                <p><b>TEAM WORK</b></p>
-            </div>
-            <div class="perSkills_right">
-
-            </div>
-            <div class="perSkills_left">
-                <p><b>COMMUNICATION</b></p>
-            </div>
-            <div class="perSkills_right">
-
-            </div>
-            <div class="perSkills_left">
-                <p><b>ORGANIZATION</b></p>
-            </div>
-            <div class="perSkills_right">
-
-            </div>
-            <div class="perSkills_left">
+            <hr><div>
                 <p><b>LEADERSHIP</b></p>
             </div>
-            <div class="perSkills_right">
-
+            <div class="container">
+                <div class="skills leadership"></div>
+            </div>
+            <div>
+                <p><b>COMMUNICATION</b></p>
+            </div>
+            <div class="container">
+                <div class="skills communication"></div>
+            </div>
+            <div>
+                <p><b>TEAM WORK</b></p>
+            </div>
+            <div class="container">
+                <div class="skills teamwork"></div>
             </div>
         </div>
         <div class="followMe">
             <h3>FOLLOW ME</h3>
             <hr>
-            <a href="https://www.skype.com" class="fa fa-skype" target="_blank"></a>
-            <a href="https://www.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
-            <a href="https://twitter.com" class="fa fa-twitter" target="_blank"></a>
-            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
-            <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+            <div>
+                <a href="https://www.linkedin.com/in/nguyen-tuyet" class="fa fa-linkedin" target="_blank"></a>
+                <a href="https://github.com/ngant5" class="fa fa-github" target="_blank"></a>
+            </div>
+
         </div>
     </div>
 
     <div class="right">
         <div class="name">
-            <h1 style="font-size: 42px">NGA NGUYEN</h1>
-            <p style="font-size: 15pt"><em>Front-end Developer</em></p>
-            <p>24 Phan Liem Street, Dakao Ward, District 1, HoChiMinh City, Vietnam</p>
-            <p>Phone number: 091.2345.678</p>
-            <p>Email: nguyentuyetnga0209@gmail.com</p>
+            <div style="line-height: 50%">
+                <h1 style="font-size: 42px">NGA NGUYEN</h1>
+                <p style="font-size: 15pt">Front-end Developer</p>
+            </div>
+            <div style="line-height: 50%">
+                <address>
+                    <p>24 Phan Liem Street, Dakao Ward, District 1, HoChiMinh City, Vietnam</p>
+                    <p>&#9742 0898.450.160</p>
+                    <p>&#9993 <a href="mailto:nguyentuyetnga0209@gmail.com">nguyentuyetnga0209@gmail.com</a></p>
+                </address>
+            </div>
         </div>
         <div class="exp">
             <h3>EXPERIENCE</h3>
             <hr>
             <div class="exp_first">
                 <div class="exp_left">
-                    <h4>IT COMTOR</h4>
+                    <p><b>ZIGEXN</b></p>
                     <p><em>2013 - 2016</em></p>
                 </div>
                 <div class="exp_right">
-                    <h5>ZIGEXN</h5>
+                    <p><b>IT COMTOR</b></p>
                     <p>Translating documents Japanese &#8644 Vietnamese</p>
                     <p>Interpreting in the meeting, support team in sales</p>
                 </div>
             </div>
             <div class="exp_second">
                 <div class="exp_left">
-                    <h4>IT COMTOR</h4>
+                    <p><b>BISYNC</b></p>
                     <p><em>2016 - 2018</em></p>
                 </div>
-                <div class="exp_right">
-                    <h5>BISYNC</h5>
-                    <p>Translating documents Japanese &#8644 Vietnamese</p>
-                    <p>Execute tests and report bugs</p>
-                    <p>Interpreting in the meeting, support Managers</p>
-                </div>
 
+                <div class="exp_right">
+                    <p><b>IT COMTOR</b></p>
+                    <p>Translating documents Japanese &#8644 Vietnamese</p>
+                    <p>Interpreting in the meeting, support Managers</p>
+                    <p>Execute tests and report bugs</p>
+                </div>
             </div>
         </div>
         <div class="edu">
@@ -221,34 +239,30 @@
             <hr>
             <div class="edu_first">
                 <div class="edu_left">
-                    <h4>HUFLIT</h4>
-                    <p>2008 - 2012</p>
+                    <p><em>2008 - 2012</em></p>
                 </div>
                 <div class="edu_right">
-                    <h5>JAPANOLOGY</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p><b>Ho Chi Minh City University of Foreign Languages and Information Technology</b></p>
+                    <p>Bachelor of Japanese studies</p>
                 </div>
             </div>
             <div class="edu_second">
                 <div class="edu_left">
-                    <h4>APTECH</h4>
-                    <p>2019 - 2021</p>
+                    <p><em>2019 - Expected 2021</em></p>
                 </div>
                 <div class="edu_right">
-                    <h5>ADSE</h5>
-                    <p>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
+                    <p><b>Aptech Computer Education</b></p>
+                    <p>Advanced Diploma in Software Engineering</p>
                 </div>
             </div>
         </div>
-        <div class="ref">
+        <div class="ref" style="line-height: 50%">
             <h3>REFERENCE</h3>
             <hr>
-                <h4>NAM GI VU</h4>
-                <p><em>GIGACOVER</em></p>
-                <p><b>Github:</b><em>https://github.com/namgivu</em></p>
-                <p><b>Email:</b><em>namgivu@gmail.com</em></p>
+                <p><b>NAM GIANG VU</b></p>
+                <p><em>Full Stack Engineer at Gigacover</em></p>
+                <p><a href="https://github.com/namgivu"><em>https://github.com/namgivu</em></a> </br></p>
+                <p><a href="mailto:namgivu@gmail.com"><em>namgivu@gmail.com</em></a></p>
         </div>
     </div>
 </div>
