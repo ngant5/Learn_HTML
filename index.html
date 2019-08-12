@@ -1,87 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
     <style>
-        .body{
-            font-family: "MS Gothic";
+        @media only screen and (max-width: 360px) {
+            .container {
+                display: None;
+            }
+        }
+        .container {
             background-color: white;
-        }
-        .main {
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin: 25px;
-        }
-        .left{
-            background-color: #E8E8E8;
-            -ms-flex: 25%;
-            flex: 25%;
-            padding: 15px;
-
-
-        }
-        .right {
-            background-color: #F1F1F1;
-            -ms-flex: 65%;
-            flex: 65%;
-            padding: 15px;
+            margin: 15px;
+            box-shadow: rgba(0, 0, 0, 0.5);
+            height: auto;
+            width: auto;
         }
         .image, .aboutMe, .proSkills, .perSkills, .followMe, .name, .exp, .edu, .ref{
-
-            padding-left: 15px;
+            padding: 15px 0px 10px 15px;
             wight: 100px;
             height: 200px;
         }
+        .image, .aboutMe, .proSkills, .perSkills, .followMe {
+            background-color: #F1F1F1;
 
+        }
+        .name, .exp, .edu, .ref{
+            background-color: #E8E8E8;
+
+        }
     </style>
 </head>
 
-
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="image">
+                <p>IMAGE</p>
+                <hr>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="name">
+                <p>NGA NGUYEN</p>
+                <hr>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="aboutMe">
+                <p>ABOUT ME</p>
+                <hr>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="exp">
+                <p>EXPERIENCE</p>
+                <hr>
+            </div>
+        </div>
 
-<div class="main">
-    <div class="left">
-        <div class="image">
-            <p>IMAGE</p>
-            <hr>
+        <div class="col-sm-6">
+            <div class="proSkills">
+                <p>PROFESSIONAL SKILLS</p>
+                <hr>
+            </div>
         </div>
-        <div class="aboutMe">
-            <p>ABOUT ME</p>
-            <hr>
 
+        <div class="col-sm-6">
+            <div class="edu">
+                <p>EDUCATION</p>
+                <hr>
+            </div>
         </div>
-        <div class="proSkills">
-            <p>PROFESSIONAL SKILLS</p>
-            <hr>
 
+        <div class="col-sm-6">
+            <div class="perSkills">
+                <p>PERSONAL SKILLS</p>
+                <hr>
+            </div>
         </div>
-        <div class="perSkills">
-            <p>PERSONAL SKILLS</p>
-            <hr>
-        </div>
-        <div class="followMe">
-            <p>FOLLOW ME</p>
-            <hr>
-        </div>
-    </div>
 
-    <div class="right">
-        <div class="name">
-            <p>NGA NGUYEN</p>
-            <hr>
+        <div class="col-sm-6">
+            <div class="ref">
+                <p>REFERENCE</p>
+                <hr>
+            </div>
         </div>
-        <div class="exp">
-            <p>EXPERIENCE</p>
-            <hr>
-        </div>
-        <div class="edu">
-            <p>EDUCATION</p>
-            <hr>
-        </div>
-        <div class="ref">
-            <p>REFERENCE</p>
-            <hr>
+
+        <div class="col-sm-6">
+            <div class="followMe">
+                <p>FOLLOW ME</p>
+                <hr>
+            </div>
         </div>
     </div>
 </div>
