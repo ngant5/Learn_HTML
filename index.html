@@ -1,105 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
-    </script>
-    <style>
-        @media only screen and (max-width: 360px) {
-            .container {
-                display: None;
-            }
-        }
-        .container {
-            background-color: white;
-            margin: 15px;
-            box-shadow: rgba(0, 0, 0, 0.5);
-            height: auto;
-            width: auto;
-        }
-        .image, .aboutMe, .proSkills, .perSkills, .followMe, .name, .exp, .edu, .ref{
-            padding: 15px 0px 10px 15px;
-            wight: 100px;
-            height: 200px;
-        }
-        .image, .aboutMe, .proSkills, .perSkills, .followMe {
-            background-color: #F1F1F1;
-
-        }
-        .name, .exp, .edu, .ref{
-            background-color: #E8E8E8;
-
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
 </head>
-
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="image">
-                <p>IMAGE</p>
-                <hr>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="name">
-                <p>NGA NGUYEN</p>
-                <hr>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="aboutMe">
-                <p>ABOUT ME</p>
-                <hr>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="exp">
-                <p>EXPERIENCE</p>
-                <hr>
-            </div>
+<div class="wrapper">
+    <div class="header">Header</div>
+    <div class="topnav">Naigation</div>
+    <div class="main">
+        <div class="aboutme">About Me</div>
+
+        <h3>Professional</h3>
+        <div class="container professional">
+            <div class="left">Left</div>
+            <div class="right">Right</div>
         </div>
 
-        <div class="col-sm-6">
-            <div class="proSkills">
-                <p>PROFESSIONAL SKILLS</p>
-                <hr>
-            </div>
+
+        <h3>Personal</h3>
+        <div class="container personal">
+            <div class="left">Left</div>
+            <div class="right">Right</div>
         </div>
 
-        <div class="col-sm-6">
-            <div class="edu">
-                <p>EDUCATION</p>
-                <hr>
-            </div>
+        <h3>Experience</h3>
+        <div class="container experience">
+            <div class="left">Left</div>
+            <div class="right">Right</div>
         </div>
 
-        <div class="col-sm-6">
-            <div class="perSkills">
-                <p>PERSONAL SKILLS</p>
-                <hr>
-            </div>
+        <h3>Education</h3>
+        <div class="container education">
+            <div class="left">Left</div>
+            <div class="right">Right</div>
         </div>
 
-        <div class="col-sm-6">
-            <div class="ref">
-                <p>REFERENCE</p>
-                <hr>
-            </div>
-        </div>
-
-        <div class="col-sm-6">
-            <div class="followMe">
-                <p>FOLLOW ME</p>
-                <hr>
-            </div>
-        </div>
+        <div class="reference">Reference</div>
     </div>
+
+    <div class="footer">Footer</div>
 </div>
 
 </body>

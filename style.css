@@ -7,51 +7,58 @@ body {
     font-family: sans-serif;
     margin: 20px;
     font-size: 20px;
+    text-align: center;
 }
 
 .header {
-    background-color: #ddd;
+    background-color: white;
     padding: 30px;
-    text-align: center;
-    font-size: 35px;
+}
+
+.topnav {
+    background-color: lightpink;
 }
 
 .main {
-    background-color: #ccc;
-
-    text-align: center;
-    font-size: 35px;
+    background-color: lightblue;
 }
 
 .footer {
-    background-color: #bbb;
+    background-color: lightgreen;
     padding: 30px;
     text-align: center;
-    font-size: 35px;
-
 }
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 150px;
-    justify-content: space-between;
+    width: auto;
+    justify-content: flex-start;
     align-items: stretch;
 }
 
 .left {
     background-color: white;
-    flex-basis: 300px;
-    flex-shrink: 0;
+    /*width: 25%;*/
 }
 
 .right {
     background-color: whitesmoke;
-    flex-basis: 200px;
+    flex-basis: 3em;
     flex-grow: 1;
-
 }
 
 /*.personal .left {*/
 /*    order: 1;*/
 /*}*/
+
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+    .left {
+        width: 25%;
+    }
+
+}
