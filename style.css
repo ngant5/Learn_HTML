@@ -5,6 +5,7 @@ body {
     margin: auto;
     font-size: 17px;
     text-align: center;
+    max-width: 1200px;
 }
 
 .header {
@@ -14,6 +15,7 @@ body {
     height: 10em;
 }
 
+/*navigation*/
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -50,14 +52,10 @@ body {
     background-color: #4CAF50;
     color: white;
 }
+
+/*Main content*/
 .main {
     background-color: lightblue;
-}
-
-.footer {
-    background-color: lightgreen;
-    padding: 30px;
-    text-align: center;
 }
 
 .container {
@@ -80,10 +78,99 @@ body {
     flex-grow: 1;
 }
 
+/*Contact form*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form-container {
+    border-radius: 5px;
+    padding: 20px;
+    display: block;
+    text-align: left;
+    margin-right: auto;
+    width: 80%;
+}
+
+/*Pagination*/
+.pagination {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+/*.center {text-align: center;}*/
+.pagination a{
+    font-size: 20px;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color  .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: green;
+    transition-duration: 0.1s;
+    width: 50px;
+    cursor: pointer;
+}
+
+
+
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+/*Footer*/
+.footer {
+    background-color: lightgreen;
+    padding: 30px;
+    text-align: center;
+
+}
+
+
+
 /*.personal .left {*/
 /*    order: 1;*/
 /*}*/
 
+/*Responsive*/
 @media screen and (min-width: 600px) {
     .container {
         flex-direction: row;
@@ -105,9 +192,6 @@ body {
     .topnav #myLinks {
         display: flex;
     }
-
-
-
 }
 
 
