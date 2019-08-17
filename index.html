@@ -6,12 +6,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <link rel="javascript" type="text/javascript" href="scripts.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 <div class="wrapper">
-    <div class="header">Header</div>
-    <div class="topnav">Naigation</div>
+    <div class="header"></div>
+    <div class="topnav">
+        <a href="#name" class="active">Nga Nguyen</a>
+        <div id="myLinks">
+            <div class="nav"><a href="#work">Work</a></div>
+            <div class="nav"><a href="#about">About</a></div>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
     <div class="main">
         <div class="aboutme">About Me</div>
 
@@ -45,6 +59,17 @@
 
     <div class="footer">Footer</div>
 </div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 
 </body>
 </html>
