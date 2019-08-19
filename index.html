@@ -8,54 +8,137 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="javascript" type="text/javascript" href="scripts.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
+
 <body>
 <div class="wrapper">
+    <!--    Header-->
     <div class="header"></div>
     <div class="topnav">
-        <a href="#name" class="active">Nga Nguyen</a>
+        <a href="#logo" class="active">NGA</a>
         <div id="myLinks">
             <div class="nav"><a href="#work">Work</a></div>
             <div class="nav"><a href="#about">About</a></div>
+            <input type="text" placeholder="Search.." name="search">
         </div>
-
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
 
-
+    <!--    Main content-->
     <div class="main">
-        <div class="aboutme">About Me</div>
 
-        <h3>Professional</h3>
-        <div class="container professional">
-            <div class="left">Left</div>
-            <div class="right">Right</div>
+        <!--        About me-->
+        <div class="aboutme">
+            <h3>ABOUT ME</h3>
+            <hr>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
 
-
-        <h3>Personal</h3>
-        <div class="container personal">
-            <div class="left">Left</div>
-            <div class="right">Right</div>
-        </div>
-
-        <h3>Experience</h3>
-        <div class="container experience">
-            <div class="left">Left</div>
-            <div class="right">Right</div>
-        </div>
-
+        <!--        Education-->
         <h3>Education</h3>
         <div class="container education">
-            <div class="left">Left</div>
-            <div class="right">Right</div>
+            <div class="left"><em>2008 - 2012</em></div>
+            <div class="right">
+                <div><b>Ho Chi Minh City University of Foreign Languages and Information Technology</b></div>
+                <div>Bachelor of Japanese studies</div>
+            </div>
         </div>
 
-        <div class="reference">Reference</div>
+        <div class="container education">
+            <div class="left"><em>2019 - Expected 2021</em></div>
+            <div class="right">
+                <div><b>Aptech Computer Education</b></div>
+                <div>Advanced Diploma in Software Engineering</div>
+            </div>
+        </div>
 
+        <!--        Experience-->
+        <h3>Experience</h3>
+        <div class="container experience">
+            <div class="left">
+                <div><b>ZIGEXN</b></div>
+                <div><em>2013 - 2016</em></div>
+            </div>
+            <div class="right">
+                <div><b>IT COMTOR</b></div>
+                <div>Translating documents Japanese &#8644 Vietnamese</div>
+                <div>Interpreting in the meeting, support team in sales</div>
+            </div>
+        </div>
+
+        <div class="container experience">
+            <div class="left">
+                <div><b>BISYNC</b></div>
+                <div><em>2016 - 2018</em></div>
+            </div>
+            <div class="right">
+                <div><b>IT COMTOR</b></div>
+                <div>Translating documents Japanese &#8644 Vietnamese</div>
+                <div>Interpreting in the meeting, support Managers</div>
+                <div>Execute tests and report bugs</div>
+            </div>
+        </div>
+
+        <!--        Personal-->
+        <h3>Personal</h3>
+        <div class="container personal">
+            <div class="left"><b>TEAM WORK</b></div>
+            <div class="right">
+                <div class="skills teamwork"></div>
+            </div>
+        </div>
+
+        <div class="container personal">
+            <div class="left"><b>COMMUNICATION</b></div>
+            <div class="right">
+                <div class="skills communication"></div>
+            </div>
+        </div>
+
+        <div class="container personal">
+            <div class="left"><b>LEADERSHIP</b></div>
+            <div class="right">
+                <div class="skills leadership"></div>
+            </div>
+        </div>
+
+        <!--        Professional-->
+        <h3>Professional</h3>
+
+        <div class="container professional">
+            <div class="left"><b>PHOTOSHOP</b></div>
+            <div class="right">
+                <div class="skills photo"></div>
+            </div>
+        </div>
+
+        <div class="container professional">
+            <div class="left"><b>WORDPRESS</b></div>
+            <div class="right">
+                <div class="skills word_press"></div>
+            </div>
+        </div>
+
+        <div class="container professional">
+            <div class="left"><b>HTML</b></div>
+            <div class="right">
+                <div class="skills html"></div>
+            </div>
+        </div>
+
+        <!--        Reference-->
+        <div class="reference">
+            <h3>REFERENCE</h3>
+            <div><b>NAM GIANG VU</b></div>
+            <div><em>Full Stack Engineer at Gigacover</em></div>
+            <div><a href="https://github.com/namgivu"><em>https://github.com/namgivu</em></a></div>
+            <div><a href="mailto:namgivu@gmail.com"><em>namgivu@gmail.com</em></a></div>
+        </div>
+
+
+        <!--        Contact-->
         <div class="form-container">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -74,6 +157,7 @@
 
     </div>
 
+    <!--    Pagination-->
     <div class="pagination">
         <a href="#">First</a>
         <a href="#">&laquo;</a>
@@ -86,7 +170,13 @@
         <a href="#">Last</a>
     </div>
 
-    <div class="footer">Footer</div>
+    <!--    Footer-->
+    <div class="footer">
+        <footer>
+            <p>Design by: Nga Nguyen</p>
+            <p>Contact information: <a href="mailto:nguyentuyetnga0209@gmail.com">nguyentuyetnga0209@gmail.com</a>.</p>
+        </footer>
+    </div>
 </div>
 
 <script>
