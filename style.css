@@ -1,12 +1,27 @@
 /** {border: 1px solid grey;}*/
+/*bat su kien luc trang web load
+javacript dien html vao element cua html khac
+lay element co menu */
 
-body {border: 1px solid grey;
+body {
     font-family: sans-serif;
     margin: auto;
     font-size: 17px;
     text-align: left;
     max-width: 1200px;
     padding: 18px;
+}
+
+.div {
+    line-height: normal;
+    clear: both;
+}
+
+
+.wrapper {
+    padding: 18px;
+    background: rgb(240,225,232);
+    background: radial-gradient(circle, rgba(240,225,232,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 .header {
@@ -20,6 +35,8 @@ body {border: 1px solid grey;
 .topnav {
     overflow: hidden;
     position: relative;
+    background: rgb(240,225,232);
+    background: radial-gradient(circle, rgba(240,225,232,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 
@@ -35,7 +52,7 @@ body {border: 1px solid grey;
  }
 
 .topnav a.icon {
-    background: black;
+    background: #ede0e8;
     display: block;
     position: absolute;
     right: 0;
@@ -47,7 +64,8 @@ body {border: 1px solid grey;
 }
 
 .active {
-    background-color: #4CAF50;
+    background: rgb(240,225,232);
+    background: radial-gradient(circle, rgba(240,225,232,1) 0%, rgba(148,187,233,1) 100%);
     color: white;
 }
 
@@ -72,7 +90,7 @@ body {border: 1px solid grey;
 .container {
     display: flex;
     flex-direction: column;
-    height: 150px;
+    /*height: 150px;*/
     width: auto;
     justify-content: flex-start;
     align-items: stretch;
@@ -85,6 +103,21 @@ body {border: 1px solid grey;
 .right {
     flex-basis: 3em;
     flex-grow: 1;
+}
+/*About me*/
+
+.aboutme img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.container img {
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 /*Pro skills*/
@@ -106,13 +139,16 @@ body {border: 1px solid grey;
 .communication {width: 50%; background-color: #BDB76B;}
 .leadership {width: 40%; background-color: #BDB76B;}
 
-.photo {width: 30%; background-color: #BDB76B;}
+.photoshop {width: 30%; background-color: #BDB76B;}
 .word_press {width: 20%; background-color: #BDB76B;}
 .html {width: 10%; background-color: #BDB76B;}
 
 
 /*Exp*/
-.experience,
+.experience {
+    height: 160px;
+}
+
 .education{
     height: 100px;
 }
@@ -196,9 +232,7 @@ body {border: 1px solid grey;
 
 /*Footer*/
 .footer {
-    background-color: lightgreen;
     padding: 30px;
-
 }
 
 
@@ -218,19 +252,22 @@ body {border: 1px solid grey;
         width: 25%;
     }
 
+
     .topnav a.icon {
         display: none;
     }
 
+
     .topnav {
+        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     .topnav #myLinks{
-        display: flex;
-        flex-direction: row;
+        display: flex !important;
+        /*flex-direction: row;*/
         justify-content: space-between;
     }
 
@@ -245,7 +282,13 @@ body {border: 1px solid grey;
         padding: 4px 8px;
         font-size: 35px;
     }
+
+    .experience {
+        height: 100px;
+    }
+
+    .education{
+        height: 80px;
+    }
 }
-
-
 

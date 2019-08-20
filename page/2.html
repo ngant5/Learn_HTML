@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="javascript" type="text/javascript" href="scripts.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <!--    Header-->
+    <div class="header"></div>
+    <div class="topnav">
+        <a href="../index.html" class="active">HOME</a>
+        <div id="myLinks">
+            <input type="text" placeholder="Search.." name="search">
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!--    Main content-->
+
+    <div class="main">
+        <h3>photo 2</h3>
+
+        <!--        Photo-->
+        <div class="container">
+            <img src="https://picsum.photos/500/800" alt="photo">
+        </div>
+    </div>
+    <!--    Pagination-->
+    <div class="pagination">
+        <a href="../index.html">First</a>
+        <a href="../index.html">1</a>
+        <a class="active" href="#">2</a>
+        <a href="3.html">3</a>
+        <a href="4.html">4</a>
+        <a href="5.html">5</a>
+        <a href="5.html">Last</a>
+    </div>
+
+    <!--    Footer-->
+    <div class="footer">
+        <footer>
+            <p>Design by: Nga Nguyen</p>
+            <p>Contact information: <a href="mailto:nguyentuyetnga0209@gmail.com">nguyentuyetnga0209@gmail.com</a>.</p>
+        </footer>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
