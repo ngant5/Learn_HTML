@@ -1,23 +1,78 @@
-<!DOCTYPE html>
-<html>
-<body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
 
-<h1>Hello World!</h1>
+<style>
+body {
+    background-color: #eee;
+    font-family: sans-serif;
+}
 
-<button type="button" onclick="myFunction()"><a href="page/2.html">2</a>
-</button>
-
-<button type="button" onclick="myFunction()"><a href="page/2.html">2</a>
-</button>
-
-<button type="button" onclick="myFunction()"><a href="page/2.html">2</a>
-</button>
-
-<script>
-    function myFunction() {
-        document.body.style.backgroundColor = "background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);";
+    .list-item {
+        color: red;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 16px;
+        margin-bottom: 8px;
+        border-radius: 5px;
+        background-color: #ddd;
     }
-</script>
+
+    .list-item-transparent {
+        background: rgd(2,0,36);
+        background: linear-gradient(90deg, rgbd(2,0,36,1));
+        color: #fff;
+    }
+
+    .list-item-pattern {
+        background-image: url(img/img.png);
+        background-size: 20%;
+        height: 200px;
+        color: white;
+        background-repeat: repeat-y;
+    }
+    .list-item-image {
+        background-image: url("img/img.png");
+        height: 500px;
+        color: white;
+        background-size: cover;
+        background-position: 0 -2000px;
+    }
+
+    .list-item-parallax {
+        background-image: url("img/img.png");
+        height: 200px;
+        color: white;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
+<body>
+<div class="list-item list-item-pattern">
+    List item 1
+</div>
+
+<div class="list-item list-item-transparent">
+    List item 2
+</div>
+
+<div class="list-item list-item-image">
+    List item 3
+</div>
+
+<div class="list-item list-item-parallax">
+    List item 4
+</div>
+
+<div class="list-item">
+    List item 5
+</div>
 
 </body>
 </html>
