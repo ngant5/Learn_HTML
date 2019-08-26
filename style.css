@@ -1,4 +1,4 @@
-/** {border: 1px solid grey;}*/
+* {border: 1px solid grey;}
 /*bat su kien luc trang web load
 javacript dien html vao element cua html khac
 lay element co menu */
@@ -21,8 +21,19 @@ body {
 
 .wrapper {
     padding: 18px;
-    background: rgb(245,249,247);
+    -webkit-animation-name: background; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-duration: 1s;
     background: linear-gradient(90deg, rgba(245,249,247,1) 0%, rgba(120,203,250,1) 100%, rgba(30,169,252,1) 100%, rgba(30,169,252,1) 100%, rgba(249,208,240,0) 100%, rgba(225,143,250,1) 100%);
+}
+
+@keyframes background {
+    0% {background: linear-gradient(90deg, rgba(245,249,247,1) 0%, rgba(120,203,250,1) 100%, rgba(30,169,252,1) 100%, rgba(30,169,252,1) 100%, rgba(249,208,240,0) 100%, rgba(225,143,250,1) 100%);}
+    50% {background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(120,203,250,1) 50%);}
+    100% {background: linear-gradient(90deg, rgba(120,203,250,1) 0%, rgba(252,249,249,1) 100%, rgba(0,0,0,1) 100%, rgba(30,169,252,1) 100%, rgba(249,208,240,0) 100%, rgba(225,143,250,1) 100%);}
+
+
+
 }
 .header {
     color:#0794e0;
@@ -31,6 +42,14 @@ body {
     padding: 30px;
     margin-bottom: 10px;
     height: 1em;
+}
+
+#greeting {
+    height: 50px;
+    font-size: 1em;
+    font-family: cursive;
+    color:#38a5e0;
+    text-align: left;
 }
 
 /*navigation*/
@@ -98,10 +117,12 @@ body {
     width: auto;
     justify-content: flex-start;
     align-items: stretch;
+    background-color: transparent;
 }
 
 .left {
     width: 100%;
+    background-color: transparent;
 }
 
 .right {
@@ -155,6 +176,7 @@ body {
 
 .education{
     height: 100px;
+    line-height: 100%;
 }
 
 
@@ -171,7 +193,7 @@ body {
     resize: vertical
 }
 
-.form-container input[type=submit] {
+.form-container button {
     font-family: sans-serif;
     background-color: white;
     color: grey;
@@ -181,7 +203,7 @@ body {
     cursor: pointer;
 }
 
-.form-container input[type=submit]:hover {
+.form-container button:hover {
     background-color: #1ea9fc;
     color:white;
 }
@@ -240,6 +262,7 @@ body {
 /*Footer*/
 .footer {
     padding: 30px;
+    font-size: 13px;
 }
 
 

@@ -14,6 +14,7 @@
 <div class="wrapper">
     <!--    Header-->
     <div class="header"></div>
+    <p id="greeting"></p>
     <div class="topnav">
         <a href="index.html" class="active">HOME</a>
         <div id="myLinks">
@@ -148,18 +149,19 @@
         <!--        Contact-->
         <div class="form-container">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input id="text" type="text" id="fname" name="firstname" placeholder="Your name..">
 
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input id="text" type="text" id="lname" name="lastname" placeholder="Your last name..">
 
             <label for="subject">Subject</label>
-            <textarea name="subject" id="subject" placeholder="Write something.." style="height:30px"></textarea>
+            <textarea id="text" name="subject" id="subject" placeholder="Write something.." style="height:30px"></textarea>
 
             <label for="content">Content</label>
-            <textarea name="content" id="content" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea id="text" name="content" id="content" placeholder="Write something.." style="height:200px"></textarea>
 
-            <input type="submit" value="Submit">
+            <p id="err" style="color: red"></p>
+            <button type="button" onclick="summit()">Summit</button>
         </div>
 
     </div>
@@ -180,6 +182,7 @@
         <footer>
             <p>Design by: Nga Nguyen</p>
             <p>Contact information: <a href="mailto:nguyentuyetnga0209@gmail.com">nguyentuyetnga0209@gmail.com</a>.</p>
+            <p id="dateTime"></p>
         </footer>
     </div>
 </div>
@@ -193,6 +196,35 @@
             x.style.display = "block";
         }
     }
+
+    var d = new Date();
+    document.getElementById("dateTime").innerHTML = d.toString();
+
+
+    var time = new Date().getHours();
+    var greeting;
+    if (time < 10) {
+        greeting = "Good morning!";
+    } else if (time < 20) {
+        greeting = "Good day!";
+    } else {
+        greeting = "Good evening!";
+    }
+    document.getElementById("greeting").innerHTML = greeting;
+
+    function summit() {
+        var message, err;
+        message = document.getElementById("err");
+        message.innerText = "";
+        x = document.getElementById('text').value;
+        try {
+            if (x == "") throw "empty";
+        }
+        catch(err) {
+            message.innerHTML = "The value must not be " + err;
+        }
+    }
+
 </script>
 
 </body>
